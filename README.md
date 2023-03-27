@@ -48,3 +48,20 @@ if it works, you did everything correctly, otherwise please reread.
 Run your headset/steamvr, so basically connect your pico 4 or quest 2 to pc and wait in main lobby. Goto your pc and press the button u want to bind to mute your mic, and press it. You should see its id in ***Current app ID***. Remember it and scroll down to mapping, find it there, and bind the key u binded in **VB**. After u done it, if it marked red, click **esc**, so it should be gray again (look at screenshot. I bind **L9 key**, its **X key** on left controller of **Pico 4**). It should work.
 
 Thats all. If you have troubles, reread guide again and also remember to test everything after each step. I dont think it would be hard, you can do it =3
+
+
+BONUS:
+here i wrote bat file to start everything automaticly:<br>
+```bat
+cd "C:\Program Files (x86)\VB\Voicemeeter"
+start "" "voicemeeterpro.exe"
+timeout /t 7
+cd "C:\Program Files\Voicemod Desktop"
+start "" "VoicemodDesktop.exe"
+timeout /t 4
+cd "C:\MyData\Documents\OpenVR2Key (Hotkeys for PICO)"
+start "" "OpenVR2Key.exe"
+timeout /t 2
+cd "C:\Program Files\Streaming Assistant"
+start "" "Streaming Assistant.exe"
+```
